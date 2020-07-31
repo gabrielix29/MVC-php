@@ -10,7 +10,9 @@
     }
   ],
   "require": {
-    "twig/twig": "3.0.0"
+    "twig/twig": "3.0.0",
+    "ext-json": "*",
+    "ext-pdo": "*"
   },
   "autoload": {
     "psr-4": {
