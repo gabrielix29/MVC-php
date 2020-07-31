@@ -6,7 +6,7 @@ use MVC\core\View;
 
 abstract class Controller
 {
-    private View $view;
+    protected View $view;
 
     function __construct()
     {
