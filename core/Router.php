@@ -6,10 +6,15 @@ class Router
 {
     private array $routes;
 
+    function __construct()
+    {
+        $this->routes = array();
+    }
+
     public function add(string $method, string $route, callable $closure)
     {
         //check if method is valid
-        if ($method == "GET" && $method == "POST" && $method == "ALL") {
+        if ($method == "GET" || $method == "POST" || $method == "ALL") {
             array_push($this->routes, [
                 "method" => $method,
                 "route" => $route,
@@ -23,6 +28,7 @@ class Router
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $requestMethod = $_SERVER['REQUEST_METHOD'];
         $uriParts = explode('/', $uri);
+        $routeFound = null;
 
         foreach ($this->routes as $route) {
             if (preg_match($route['route'], $uri)) {
