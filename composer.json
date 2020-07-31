@@ -1,0 +1,15 @@
+{
+  "name": "gabrielix29/MVC-php",
+  "description": "basic MVC system for PHP",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "gabrielix29",
+      "email": "gabrielix29@protonmail.ch"
+    }
+  ],
+  "require": {
+    
+  }
+}
