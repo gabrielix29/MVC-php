@@ -1,2 +1,1 @@
-# MVC-php
-basic MVC system for PHP
+# basic MVC system for PHP
