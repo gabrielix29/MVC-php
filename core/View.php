@@ -13,7 +13,6 @@ class View
 
     function __construct()
     {
-        $this->defaultTemplate = getenv("DefaultTemplate");
         $this->data = array();
     }
 
@@ -23,7 +22,7 @@ class View
             $this->data = $data;
         }
 
-        $loader = new FilesystemLoader(dirname(__DIR__) . '/views');
+        $loader = new FilesystemLoader(dirname(__DIR__) . '/app/views');
         $twig = new Environment($loader);
         echo $twig->render($view, $this->data);
     }
@@ -34,10 +33,5 @@ class View
 
     public function addData(array $data) {
         array_push($this->data, $data);
-    }
-
-    public function overrideDefaultTemplate(string $template)
-    {
-        $this->defaultTemplate = $template;
     }
 }
