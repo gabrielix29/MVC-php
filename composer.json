@@ -16,9 +16,9 @@
   },
   "autoload": {
     "psr-4": {
-      "MVC\\classes\\": "classes",
       "MVC\\core\\": "core",
-      "MVC\\utils\\": "utils"
+      "MVC\\utils\\": "utils",
+      "MVC\\app\\controllers\\": "app/controllers"
     }
   }
 }
