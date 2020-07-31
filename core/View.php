@@ -3,7 +3,7 @@
 namespace MVC\core;
 
 use Twig\Environment;
-use Twig\Loader\FilesystemLoader;
+use Twig\Loader\Filesystemloader;
 
 class View
 {
@@ -16,15 +16,28 @@ class View
         $this->data = array();
     }
 
-    public function render(string $view, array $data = null)
+    public static function renderTemplate($template, $args = [])
     {
-        if ($data) {
-            $this->data = $data;
+        static $twig = null;
+
+        if ($twig === null) {
+            $loader = new Filesystemloader(dirname(__DIR__) . '/app/views');
+            $twig = new Environment($loader);
         }
 
-        $loader = new FilesystemLoader(dirname(__DIR__) . '/app/views');
-        $twig = new Environment($loader);
-        echo $twig->render($view, $this->data);
+        echo $twig->render($template, $args);
+    }
+
+    public function render(string $view, array $data = [])
+    {
+        static $twig = null;
+
+        if ($twig === null) {
+            $loader = new Filesystemloader(dirname(__DIR__) . '/app/views');
+            $twig = new Environment($loader);
+        }
+
+        echo $twig->render($view, $data);
     }
 
     public function setData(array $data) {

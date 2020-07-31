@@ -1,15 +1,12 @@
 <?php
 
-namespace MVC\classes;
+namespace MVC\core;
 
-use MVC\core\View;
-
-abstract class Controller
+class Controller
 {
     protected View $view;
 
-    function __construct()
-    {
-        $this->view = new View();
+    protected function getView() {
+        return new View();
     }
 }

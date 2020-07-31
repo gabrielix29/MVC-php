@@ -1,6 +1,6 @@
 <?php
 
-namespace MVC\classes;
+namespace MVC\core;
 
 use MVC\utils\DatabaseConnector;
 
