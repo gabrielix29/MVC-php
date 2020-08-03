@@ -2,11 +2,12 @@
 
 namespace MVC\core;
 
-class Controller
+abstract class Controller
 {
     protected View $view;
 
-    protected function getView() {
-        return new View();
+    function __construct()
+    {
+        $this->view = new View();
     }
 }

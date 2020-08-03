@@ -7,6 +7,6 @@ use MVC\core\View;
 
 class MainController extends Controller {
     public function index($uriParts) {
-        View::renderTemplate('home/index.html');
+        $this->view->render('home/index.html');
     }
 }
