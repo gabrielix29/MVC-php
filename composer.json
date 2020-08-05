@@ -1,8 +1,9 @@
 {
   "name": "gabrielix29/MVC-php",
   "description": "basic MVC system for PHP",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "license": "MIT",
+  "version": "0.1.0",
   "authors": [
     {
       "name": "gabrielix29",
