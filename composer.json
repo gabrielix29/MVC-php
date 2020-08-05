@@ -12,9 +12,9 @@
   ],
   "require": {
     "twig/twig": "3.0.0",
+    "gabrielix29/php-router": "0.1.0",
     "ext-json": "*",
-    "ext-pdo": "*",
-    "gabrielix29/php-router": "dev-master"
+    "ext-pdo": "*"
   },
   "autoload": {
     "psr-4": {

@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee98f0b4a8b8d0000f2c5dee05fde3e5",
+    "content-hash": "bb6eb02a9f993b755247af1328f170bb",
     "packages": [
         {
             "name": "gabrielix29/php-router",
-            "version": "dev-master",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gabrielix29/php-router.git",
-                "reference": "4a110339d01a148671e5c7b7a853d5b35344618c"
+                "reference": "562fbeb2d0866f493d424c336d95cd4144695b19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gabrielix29/php-router/zipball/4a110339d01a148671e5c7b7a853d5b35344618c",
-                "reference": "4a110339d01a148671e5c7b7a853d5b35344618c",
+                "url": "https://api.github.com/repos/gabrielix29/php-router/zipball/562fbeb2d0866f493d424c336d95cd4144695b19",
+                "reference": "562fbeb2d0866f493d424c336d95cd4144695b19",
                 "shasum": ""
             },
             "type": "library",
@@ -42,11 +42,11 @@
                 "php",
                 "router"
             ],
-            "time": "2020-08-05T11:36:34+00:00"
+            "time": "2020-08-05T12:18:06+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.18.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -122,7 +122,7 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.18.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -265,9 +265,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "gabrielix29/php-router": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
