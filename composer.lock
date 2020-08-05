@@ -4,8 +4,46 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74fa048c10ea4d1924e2ea64e580fec0",
+    "content-hash": "ee98f0b4a8b8d0000f2c5dee05fde3e5",
     "packages": [
+        {
+            "name": "gabrielix29/php-router",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gabrielix29/php-router.git",
+                "reference": "4a110339d01a148671e5c7b7a853d5b35344618c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gabrielix29/php-router/zipball/4a110339d01a148671e5c7b7a853d5b35344618c",
+                "reference": "4a110339d01a148671e5c7b7a853d5b35344618c",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "gabrielix29\\Router\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "gabrielix29",
+                    "email": "gabrielix29@protonmail.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "simple Router",
+            "keywords": [
+                "php",
+                "router"
+            ],
+            "time": "2020-08-05T11:36:34+00:00"
+        },
         {
             "name": "symfony/polyfill-ctype",
             "version": "v1.18.0",
@@ -226,11 +264,16 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "gabrielix29/php-router": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-json": "*",
+        "ext-pdo": "*"
+    },
     "platform-dev": [],
     "plugin-api-version": "1.1.0"
 }

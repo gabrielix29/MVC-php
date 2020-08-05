@@ -2,8 +2,8 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use MVC\core\Router;
 use MVC\utils\DotEnv;
+use gabrielix29\Router\Router;
 
 use MVC\app\controllers\MainController;
 

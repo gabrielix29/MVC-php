@@ -13,7 +13,8 @@
   "require": {
     "twig/twig": "3.0.0",
     "ext-json": "*",
-    "ext-pdo": "*"
+    "ext-pdo": "*",
+    "gabrielix29/php-router": "dev-master"
   },
   "autoload": {
     "psr-4": {
